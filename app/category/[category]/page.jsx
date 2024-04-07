@@ -21,6 +21,18 @@ function page({ params }) {
 
   return (
     <div className="flex flex-col items-center justify-center p-5 md:p-10 w-full bg-base-300">
+      <Link href="/">
+        <button className="btn btn-circle bg-base-content hover:bg-neutral-content absolute top-5 md:top-10 left-3 md:left-10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+          >
+            <path d="M20 11H7.41l2.29-2.29A1 1 0 1 0 8.29 7.29L3.71 12l4.59 4.59a1 1 0 0 0 1.42-1.42L7.41 13H20a1 1 0 0 0 0-2z" />
+          </svg>
+        </button>
+      </Link>
       <h1 className="text-4xl md:text-6xl text-primary mb-10">
         {params.category}
       </h1>
