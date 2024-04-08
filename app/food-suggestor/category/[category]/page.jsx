@@ -21,7 +21,7 @@ function page({ params }) {
 
   return (
     <div className="flex flex-col items-center justify-center p-5 md:p-10 w-full bg-base-300">
-      <Link href="/">
+      <Link href="/food-suggestor">
         <button className="btn btn-circle bg-base-content hover:bg-neutral-content absolute top-5 md:top-10 left-3 md:left-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ function page({ params }) {
               <h2 className="card-title">{meal.strMeal}</h2>
               <Link
                 className="card-actions justify-end"
-                href={`/meal/${meal.idMeal}`}
+                href={`/food-suggestor/meal/${meal.idMeal}`}
               >
                 <button className="btn btn-primary">Try</button>
               </Link>

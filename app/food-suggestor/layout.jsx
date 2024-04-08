@@ -1,11 +1,11 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "API Hacks",
-  description: "Hacks created for MLH's GHW API",
+  title: "Food Suggestor",
+  description: "Get suggestions for your next meal",
 };
 
 export default function RootLayout({ children }) {
